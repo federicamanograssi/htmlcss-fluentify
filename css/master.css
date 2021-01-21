@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.boxed {
+  /* width: 80%;
+  margin: auto; */
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* HEADER */
+
+/* STRUTTURE GENERALI */
+
+/* .col3 .col{
+  width: 33%;
+  float: left;
+}
+.col2 .col {
+  width: 50%;
+  float: left;
+} */
+
+/* .button .large{
+  da definire
+}
+
+.button .small{
+  da definire
+} */
