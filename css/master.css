@@ -5,15 +5,21 @@
 }
 
 body {
-  /* width: 80%;
-  margin: auto; */
+  width: 80%;
+  margin: auto;
   font-family: 'Open Sans', sans-serif;
+}
+body p{
+  color: grey;
 }
 .clearfix{
   content: '';
   display: table;
   clear: both;
 }
+
+/* HEADER */
+
 
 /* MAIN */
 .sezione_grigia {
@@ -22,13 +28,11 @@ body {
   background: lightgrey;
   padding: 40px;
 }
-.sezione_grigia p{
-  color:grey;
-}
 
 /* STRUTTURE GENERALI */
 .section {
-  padding: 40px 0;
+  width: 100%;
+  margin: 40px 0 ;
 }
 .col3 .col{
   width: 33%;
@@ -40,20 +44,38 @@ body {
   width: 100%;
   height: 150px;
 }
-.col3 .col h3{
+.col3 .col h2{
   color: green;
+  margin:20px 0;
 }
 
-hr.section_hr{
-  width: 90%;
+.hr_title{
+  width: 30%;
+  margin:auto;
+  margin-bottom: 20px;
+}
+
+.hr_section{
+  width: 95%;
   margin: auto;
 }
+
 .col2 .col{
   width: 50%;
-  height: 20px;
-  background: blue;
   float: left;
+  padding: 0 30px;
 }
+
+.col2 .col h2{
+  font-size: 2em;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+.col2 .col p{
+  margin-bottom: 20px;
+}
+
+
 footer{
   background: red;
   height: 5vh;
