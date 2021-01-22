@@ -1,3 +1,7 @@
+/* COSE DA FARE
+- RAGGRUPPA MEGLIO I css
+- CENTRATURE HEADER E FOOTER */
+
 *{
   margin: 0;
   padding: 0;
@@ -5,8 +9,6 @@
 }
 
 body {
-  width: 80%;
-  margin: auto;
   font-family: 'Open Sans', sans-serif;
 }
 body p{
@@ -17,8 +19,81 @@ body p{
   display: table;
   clear: both;
 }
+.boxed{
+  width: 80%;
+  margin:auto;
+}
+.button {
+  color:white;
+  border-radius: 5px;
+  border: 1px solid;
+  text-transform:uppercase;
+}
+.button.small{
+  padding:5px 20px;
+}
+.button.large{
+  padding:20px;
+}
+.button.active{
+  background: green;
+  border: green;
+}
+.button.empty{
+  background: blue;
+}
 
 /* HEADER */
+header{
+  background: blue;
+  width: 100%;
+  position: relative;
+}
+.top_header {
+  background: blue;
+  padding: 20px;
+  text-transform: uppercase;
+}
+.top_header .logo,
+.top_header .nav_menu{
+  float: left;
+}
+.top_header .login_menu{
+  float: right;
+}
+.top_header ul li{
+  display: inline-block;
+  margin-right: 10px;
+}
+.top_header a{
+  text-decoration: none;
+  color: white;
+}
+
+header img{
+  position: absolute;
+  width: 80%;
+  right:0;
+  bottom:0;
+  z-index:1;
+}
+/* HERO SECTION */
+.hero_section{
+  position: relative;
+  height: 60vh;
+  color: white;
+  overflow: hidden;
+}
+.hero_title{
+  position: absolute;
+  top: 20vh;
+  width: 50%;
+}
+.hero_title h1{
+  font-size: 25.em;
+  margin-bottom: 5vh;
+}
+
 
 
 /* MAIN */
@@ -31,8 +106,9 @@ body p{
 
 /* STRUTTURE GENERALI */
 .section {
-  width: 100%;
-  margin: 40px 0 ;
+  /* width: 100%; */
+  margin: auto ;
+  padding:40px 0;
 }
 .col3 .col{
   width: 33%;
@@ -77,14 +153,27 @@ body p{
 
 
 footer{
-  background: red;
-  height: 5vh;
+  width: 100%;
+  background: lightgrey;
+  padding: 20px;
+
 }
 
-/* .button .large{
-  da definire
+.footer_left{
+  float: left;
+}
+.footer_right{
+  float:right;
 }
 
-.button .small{
-  da definire
-} */
+#help{
+  display: inline-block;
+  background: green;
+  color:white;
+  text-transform: uppercase;
+  position: fixed;
+  bottom:0;
+  right:30%;
+  padding: 7px;
+  border-radius: 5px 5px 0 0;
+}

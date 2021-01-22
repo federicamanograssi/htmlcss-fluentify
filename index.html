@@ -9,9 +9,9 @@
   </head>
   <body>
     <header>
-      <div class="top_header">
+      <div class="boxed top_header clearfix">
         <div class="logo">
-          <img src="img/logo.svg" alt="">
+          <!-- <img src="img/logo.svg" alt=""> -->
         </div>
         <div class="nav_menu">
           <ul>
@@ -24,13 +24,19 @@
         <div class="login_menu">
           <ul>
             <li><a href="#">diventa un tutor</a></li>
-            <li><a href="#">login</a></li>
-            <li><a href="#">struttura un piano</a></li>
+            <li class="button small empty"><a href="#">login</a></li>
+            <li class="button small active"><a href="#" >struttura un piano</a></li>
           </ul>
         </div>
       </div>
-      <div class="hero_section">
-
+      <img src="img/background-header.png" alt="">
+      <div class="boxed hero_section">
+        <div class="hero_title">
+          <h1>Scegli l'inglese studiato per i professionisti</h1>
+          <button class="button large active">
+            struttura un piano
+          </button>
+        </div>
       </div>
     </header>
 
@@ -42,7 +48,7 @@
       </div>
 
       <!-- SEZIONE 3 COLONNE -->
-      <div class="section col3 clearfix">
+      <div class="boxed section col3 clearfix">
         <div class="col">
           <img src="img/profile.svg" alt="Formazione">
           <h2>Piano formativo configurato sul proprio livello</h2>
@@ -66,7 +72,7 @@
       <hr class="hr_Section">
 
       <!-- SEZIONE 2 COLONNE -->
-      <div class="section col2 clearfix">
+      <div class="boxed section col2 clearfix">
         <div class="col">
           <img src="img/mountain.svg" alt="">
         </div>
@@ -79,17 +85,22 @@
     </main>
 
     <!-- FOOTER -->
-    <footer>
-      <!-- <div class="">
-        <h2>struttura un piano</h2>
-      </div>
-      <div class="">
-        <p>Sono</p>
-        <p>Seleziona</p>
-        <div class="button large">
-          visualizza il tuo piano
+    <footer class="clearfix">
+      <div class="boxed content">
+        <div class="footer_left">
+          <h2>Struttura un piano</h2>
         </div>
-      </div> -->
+        <div class="footer_right">
+          <span>Sono</span>
+          <span>Seleziona</span>
+          <div class="footer_right button large active">
+            visualizza il tuo piano
+          </div>
+        </div>
+      </div>
     </footer>
+    <div id="help">
+      <a href="#">help</a>
+    </div>
   </body>
 </html>
