@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 body p{
   color: grey;
@@ -48,9 +48,17 @@ header{
   background: blue;
   width: 100%;
   position: relative;
+  font-size: 14px;
+}
+header img.background{
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  right:0;
+  bottom:0;
+  z-index:1;
 }
 .top_header {
-  background: blue;
   padding: 20px;
   text-transform: uppercase;
 }
@@ -61,6 +69,11 @@ header{
 .top_header .login_menu{
   float: right;
 }
+.logo img{
+  height: 40px;
+}
+
+
 .top_header ul li{
   display: inline-block;
   margin-right: 10px;
@@ -70,13 +83,6 @@ header{
   color: white;
 }
 
-header img{
-  position: absolute;
-  width: 80%;
-  right:0;
-  bottom:0;
-  z-index:1;
-}
 /* HERO SECTION */
 .hero_section{
   position: relative;
@@ -87,29 +93,24 @@ header img{
 .hero_title{
   position: absolute;
   top: 20vh;
-  width: 50%;
+  width: 30%;
 }
 .hero_title h1{
   font-size: 25.em;
   margin-bottom: 5vh;
 }
-
-
-
-/* MAIN */
-.sezione_grigia {
-  text-align: center;
-  line-height: 30px;
-  background: lightgrey;
+.section{
   padding: 40px;
 }
 
-/* STRUTTURE GENERALI */
-.section {
-  /* width: 100%; */
-  margin: auto ;
-  padding:40px 0;
+/* MAIN */
+.section.gray {
+  text-align: center;
+  line-height: 30px;
+  background: lightgrey;
 }
+
+
 .col3 .col{
   width: 33%;
   float: left;
@@ -165,15 +166,27 @@ footer{
 .footer_right{
   float:right;
 }
+.footer span{
+  padding: 0 20px;
+}
+.footer span:last-child{
+  margin-right: 0;
+}
 
+#fake_input{
+  width: 50px;
+  text-decoration: underline;
+}
 #help{
-  display: inline-block;
   background: green;
-  color:white;
   text-transform: uppercase;
   position: fixed;
   bottom:0;
-  right:30%;
+  right:5%;
   padding: 7px;
   border-radius: 5px 5px 0 0;
+}
+#help a{
+  text-decoration: none;
+  color:white;
 }
